@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment/Greetings</title>
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+            background-color: rgb(0, 0, 0);
+        }
+        #container{
+            height: 60vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            color: bisque;
+        }
+        #screen{
+            margin:50px ;
+            text-align: center;
+            font-size: large;
+            font-weight: bolder;
+        }
+        #buttons button{
+            border: none;
+            background-color: rgb(170, 0, 226);
+            color: white;
+            font-size: large;
+            font-weight: bold;
+            height: 30px;
+            width: 200px;
+            margin: 10px;
+            cursor: pointer;
+            box-shadow: 0px 0px 5px rgb(180, 2, 250);
+        }
+        #buttons button:active{
+            height: 30px;
+            width: 200px;
+            margin: 10px;
+            transform: scale(0.96);
+        }
+    </style>
+    <script>
+        function goodmorning(){
+            var display=document.getElementById("display");
+            display.innerText="Good Morning";
+            var adddisplay=document.getElementById("adddisplay")
+            adddisplay.innerText="  Vijayalakshmi"
+            display.style.color="tomato"
+            adddisplay.style.color="green"
+        }
+        function goodafternoon(){
+            var display=document.getElementById("display");
+            display.innerText="Good Afternoon";
+            var adddisplay=document.getElementById("adddisplay")
+            adddisplay.innerText="  Vijayalakshmi"
+            display.style.color="tomato"
+            adddisplay.style.color="grey"
+        }
+        function goodnight(){
+            var display=document.getElementById("display");
+            display.innerText="Good Night";
+            var adddisplay=document.getElementById("adddisplay")
+            adddisplay.innerText="  Vijayalakshmi"
+            display.style.color="tomato"
+            adddisplay.style.color="violet"
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="screen">
+            <span id="display">Hello, Vijayalakshmi</span><span id="adddisplay"></span>
+        </div>
+        <div id="buttons">
+            <button id="goodmorning" onclick="goodmorning();">Good Morning</button>
+            <button id="goodafternoon" onclick="goodafternoon();">Good Afternoon</button>
+            <button id="goodnight" onclick="goodnight();">Good Night</button>
+        </div>
+    </div>
+</body>
+</html>
